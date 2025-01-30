@@ -1,3 +1,5 @@
+package main
+
 object Hello:
   @main
   def initialize(args: String*): Unit =

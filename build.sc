@@ -25,7 +25,7 @@ object main extends ScalaModule with ScalafmtModule {
     ivy"com.lihaoyi::scalasql:${V.ScalaSql}",
     ivy"com.h2database:h2:${V.H2}"
   )
-  object test extends ScalaTests {
+  object test extends ScalaTests with ScalafmtModule {
     def testFramework = "munit.Framework"
     def ivyDeps = Agg(
       ivy"org.scalameta::munit:${V.Munit}"
