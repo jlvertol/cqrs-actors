@@ -13,6 +13,6 @@ trait DbTestSetup:
     config = new scalasql.Config {}
   )
 
-//  dbClient.transaction { txn =>
-//    txn.updateRaw(os.read(os.Path("main/test/resources/schema.sql", os.pwd)))
-//  }
+  dbClient.transaction { txn =>
+    txn.updateRaw(os.read(os.Path("main/test/resources/schema.sql", os.pwd)))
+  }
