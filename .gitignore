@@ -1,0 +1,13 @@
+.DS_STORE
+.idea_modules
+.idea
+.vscode/
+.bloop/
+.metals/
+.bsp/
+.bloop/
+.dotty-ide*
+.idea/
+project/
+out/
+output/
